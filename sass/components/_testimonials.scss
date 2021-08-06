@@ -1,0 +1,36 @@
+.testimonials {
+  display: grid;
+  grid-template-rows: 2;
+  row-gap: 6rem;
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100rem;
+    background: rgba($color-main-white, 0.7);
+    padding: 5rem 8rem;
+    clip-path: polygon(7% 0, 100% 0%, 93% 100%, 0% 100%);
+  }
+
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100rem;
+    }
+  }
+
+  &__text {
+    width: 70%;
+  }
+
+  &__story {
+    line-height: 1.6;
+  }
+}

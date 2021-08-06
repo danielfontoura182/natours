@@ -1,0 +1,45 @@
+.information__images {
+  position: relative;
+  width: 50%;
+}
+
+.information__img {
+  width: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: $box-shadow-medium;
+  transform: translate(-50%, -50%);
+
+  &--1 {
+    top: 30%;
+    left: 30%;
+    transition: all 0.2s;
+
+    &:hover {
+      z-index: 10;
+      width: 34rem;
+    }
+  }
+
+  &--2 {
+    top: 40%;
+    left: 70%;
+    transition: all 0.2s;
+
+    &:hover {
+      z-index: 10;
+      width: 34rem;
+    }
+  }
+
+  &--3 {
+    top: 70%;
+    transition: all 0.2s;
+
+    &:hover {
+      z-index: 10;
+      width: 34rem;
+    }
+  }
+}

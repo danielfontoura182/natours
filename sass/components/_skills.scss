@@ -1,0 +1,28 @@
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  &__item {
+    background: rgba(255, 255, 255, 0.753);
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 25rem;
+    box-shadow: $box-shadow-light;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-15px) scale(1.02);
+    }
+  }
+
+  &__icon {
+    width: 7rem;
+    height: 7rem;
+    fill: url(#svg-gradient) #7ed56f;
+    margin-bottom: 3rem;
+  }
+}

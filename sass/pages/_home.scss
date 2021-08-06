@@ -1,0 +1,47 @@
+.info,
+.tours-section {
+  background: $color-offWhite;
+  padding: 20rem 0 35rem 0;
+  margin-top: -20vh;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+
+  &__text-container {
+    width: 50rem;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+}
+
+.skills-section {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../../img/nat-4.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+  margin-top: -25rem;
+  padding: 28rem 0;
+}
+
+.tours-section {
+  margin-top: -20rem;
+  padding: 27rem 0 15rem 0;
+}
+
+.testimonials-section {
+  position: relative;
+  padding: 15rem 0;
+}

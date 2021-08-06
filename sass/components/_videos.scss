@@ -1,0 +1,17 @@
+.vide-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.18;
+  z-index: -1;
+  background-color: $color-offWhite;
+
+  &__media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
