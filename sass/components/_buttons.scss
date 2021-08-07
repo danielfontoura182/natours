@@ -28,4 +28,13 @@
       transform: translateY(-2px);
     }
   }
+
+  &__submit {
+    background-image: linear-gradient(
+      to bottom right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    color: $color-main-white;
+  }
 }

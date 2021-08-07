@@ -45,3 +45,12 @@
   position: relative;
   padding: 15rem 0;
 }
+
+.contact-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}
