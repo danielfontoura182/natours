@@ -1,0 +1,51 @@
+.footer {
+  background: $color-main-black;
+
+  &__img {
+    width: 15rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__links {
+    display: flex;
+    border-top: 1px solid $color-grey;
+    padding: 2rem;
+    li {
+      margin: 0 1rem;
+
+      a {
+        color: $color-offWhite;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $color-primary-medium;
+        }
+      }
+    }
+  }
+
+  &__info {
+    border-top: 1px solid $color-grey;
+    padding: 2rem;
+    text-align: center;
+
+    p {
+      color: $color-offWhite;
+    }
+
+    a {
+      color: $color-primary-dark;
+
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+  }
+}
