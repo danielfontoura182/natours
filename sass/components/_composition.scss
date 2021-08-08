@@ -4,7 +4,7 @@
 }
 
 .information__img {
-  width: 30rem;
+  width: 52%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,31 +15,21 @@
     top: 30%;
     left: 30%;
     transition: all 0.2s;
-
-    &:hover {
-      z-index: 10;
-      width: 34rem;
-    }
   }
 
   &--2 {
     top: 40%;
     left: 70%;
     transition: all 0.2s;
-
-    &:hover {
-      z-index: 10;
-      width: 34rem;
-    }
   }
 
   &--3 {
     top: 70%;
     transition: all 0.2s;
+  }
 
-    &:hover {
-      z-index: 10;
-      width: 34rem;
-    }
+  &:hover {
+    z-index: 10;
+    width: 58%;
   }
 }
