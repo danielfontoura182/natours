@@ -1,10 +1,12 @@
 .skills {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 3rem;
+  display: flex;
+  justify-content: space-between;
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
+
+  @include respond(bigTablet-port) {
+  }
 
   &__item {
     background: rgba(255, 255, 255, 0.753);
@@ -13,6 +15,10 @@
     width: 25rem;
     box-shadow: $box-shadow-light;
     transition: all 0.2s;
+
+    @include respond(bigTablet-port) {
+      width: 23rem;
+    }
 
     &:hover {
       transform: translateY(-15px) scale(1.02);

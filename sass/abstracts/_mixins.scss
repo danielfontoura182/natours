@@ -4,4 +4,16 @@
       @content;
     }
   }
+
+  @if $breakpoint == bigTablet-land {
+    @media only screen and (max-width: 85.38em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bigTablet-port {
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
 }

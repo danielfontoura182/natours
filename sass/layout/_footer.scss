@@ -11,6 +11,11 @@
   &__content {
     display: flex;
     justify-content: space-around;
+
+    @include respond(bigTablet-port) {
+      justify-content: space-around;
+      text-align: center;
+    }
   }
 
   &__links {
