@@ -18,6 +18,12 @@
   }
 
   @if $breakpoint == tablet-port {
+    @media only screen and (max-width: 57em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bigPhone-land {
     @media only screen and (max-width: 52.13em) {
       @content;
     }
