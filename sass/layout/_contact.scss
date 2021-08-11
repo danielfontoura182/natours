@@ -12,6 +12,14 @@
   margin: 0 auto;
   box-shadow: $box-shadow-light;
 
+  @include respond(tablet-port) {
+    background-image: linear-gradient(
+        rgba($color-main-white, 0.8) 0%,
+        rgba($color-main-white, 0.8) 50%
+      ),
+      url(../img/nat-10.jpg);
+  }
+
   &__content {
     text-align: left;
     padding: 5rem;

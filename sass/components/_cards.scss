@@ -6,7 +6,7 @@
   max-width: 1170px;
   margin: 0 auto;
 
-  @include respond(bigTablet-port) {
+  @include respond(tablet-land) {
     column-gap: 2rem;
   }
 
@@ -31,7 +31,7 @@
     &--back {
       transform: rotateY(180deg);
 
-      @include respond(bigTablet-port) {
+      @include respond(tablet-land) {
         transform: rotateY(0);
         height: 28rem;
         top: 52rem;
@@ -65,7 +65,7 @@
         font-weight: 100;
         color: $color-main-white;
 
-        @include respond(bigTablet-port) {
+        @include respond(tablet-land) {
           font-size: 5rem;
         }
       }
@@ -215,7 +215,7 @@
     background: $color-primary-medium;
     color: $color-main-white;
 
-    @include respond(bigTablet-port) {
+    @include respond(tablet-land) {
       margin-top: 30rem;
     }
   }

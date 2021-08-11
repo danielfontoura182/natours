@@ -14,7 +14,7 @@ html {
     font-size: 66%;
   }
 
-  @include respond(bigTablet-port) {
+  @include respond(tablet-land) {
     font-size: 58%;
   }
 }
@@ -23,6 +23,10 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 2.5rem;
   position: relative;
+
+  @include respond(tablet-land) {
+    margin: 0;
+  }
 }
 
 a {

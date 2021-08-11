@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-around;
 
-    @include respond(bigTablet-port) {
+    @include respond(tablet-land) {
       justify-content: space-around;
       text-align: center;
     }

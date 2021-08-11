@@ -10,7 +10,7 @@
     padding-top: 25rem;
   }
 
-  @include respond(bigTablet-port) {
+  @include respond(tablet-land) {
     margin-top: 0;
     padding-top: 15rem;
   }
@@ -24,7 +24,7 @@
   margin: 0 auto;
   padding-bottom: 6rem;
 
-  @include respond(bigTablet-port) {
+  @include respond(tablet-land) {
   }
 
   &__text-container {
@@ -50,7 +50,7 @@
   margin-top: -25rem;
   padding: 28rem 0;
 
-  @include respond(bigTablet-port) {
+  @include respond(tablet-land) {
     clip-path: none;
     padding: 15rem 0 36rem 0;
   }
@@ -60,7 +60,7 @@
   margin-top: -20rem;
   padding: 27rem 0 15rem 0;
 
-  @include respond(bigTablet-port) {
+  @include respond(tablet-land) {
     padding-top: 15rem;
   }
 }

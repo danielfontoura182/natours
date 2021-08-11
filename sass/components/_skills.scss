@@ -5,7 +5,7 @@
   max-width: 1170px;
   margin: 0 auto;
 
-  @include respond(bigTablet-port) {
+  @include respond(tablet-land) {
   }
 
   &__item {
@@ -16,7 +16,7 @@
     box-shadow: $box-shadow-light;
     transition: all 0.2s;
 
-    @include respond(bigTablet-port) {
+    @include respond(tablet-land) {
       width: 23rem;
     }
 

@@ -11,8 +11,14 @@
     }
   }
 
-  @if $breakpoint == bigTablet-port {
-    @media only screen and (max-width: 64em) {
+  @if $breakpoint == tablet-land {
+    @media only screen and (max-width: 69.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-port {
+    @media only screen and (max-width: 52.13em) {
       @content;
     }
   }
