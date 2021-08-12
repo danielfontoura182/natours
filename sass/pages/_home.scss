@@ -24,11 +24,20 @@
   margin: 0 auto;
   padding-bottom: 6rem;
 
-  @include respond(tablet-land) {
+  @include respond(smallTablet-port) {
+    width: 97%;
+  }
+
+  @include respond(bigPhone-port) {
+    display: block;
   }
 
   &__text-container {
     width: 50rem;
+
+    @include respond(bigPhone-port) {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -38,13 +47,10 @@
 
 .skills-section {
   background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url(../../img/nat-4.jpg);
-  background-size: cover;
-  background-position: center;
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
   -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
   clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
   margin-top: -25rem;
@@ -67,6 +73,7 @@
 
 .testimonials-section {
   position: relative;
+  background: $color-offWhite;
 }
 
 .contact-section {

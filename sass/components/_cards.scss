@@ -10,10 +10,27 @@
     column-gap: 2rem;
   }
 
+  @include respond(smallTablet-port) {
+    width: 97%;
+    column-gap: 1rem;
+  }
+
+  @include respond(bigPhone-port) {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
   .tour {
     position: relative;
     height: 52rem;
     perspective: 150rem;
+
+    &:not(:last-child) {
+      @include respond(bigPhone-port) {
+        margin-bottom: 35rem;
+      }
+    }
 
     &__side {
       position: absolute;
@@ -198,6 +215,10 @@
       padding: 1rem 0;
       text-transform: capitalize;
       margin-bottom: 1rem;
+
+      @include respond(phone-land) {
+        padding: 0.6rem;
+      }
     }
 
     &__item:not(:last-child) {

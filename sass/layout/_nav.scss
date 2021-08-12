@@ -72,7 +72,7 @@
     $color-primary-light,
     $color-primary-dark
   );
-  z-index: 100;
+  z-index: 1000;
   overflow: hidden;
   transform: translateX(-150%);
   transition: all 0.5s;
@@ -91,11 +91,27 @@
 
   &__item:not(:last-child) {
     margin-bottom: 8rem;
+
+    @include respond(phone-land-height) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(phone-port) {
+      margin-bottom: 3.5rem;
+    }
   }
 
   &__link {
     font-size: 6rem;
     color: $color-main-white;
+
+    @include respond(phone-land-height) {
+      font-size: 3rem;
+    }
+
+    @include respond(bigPhone-port) {
+      font-size: 3rem;
+    }
   }
 }
 

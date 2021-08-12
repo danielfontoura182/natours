@@ -5,7 +5,13 @@
   max-width: 1170px;
   margin: 0 auto;
 
-  @include respond(tablet-land) {
+  @include respond(smallTablet-port) {
+    width: 97%;
+  }
+
+  @include respond(bigPhone-port) {
+    flex-direction: column;
+    width: 90%;
   }
 
   &__item {
@@ -20,8 +26,18 @@
       width: 23rem;
     }
 
+    @include respond(bigPhone-port) {
+      width: 100%;
+    }
+
     &:hover {
       transform: translateY(-15px) scale(1.02);
+    }
+  }
+
+  &__item:not(:last-child) {
+    @include respond(bigPhone-port) {
+      margin-bottom: 2rem;
     }
   }
 

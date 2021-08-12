@@ -23,8 +23,38 @@
     }
   }
 
+  @if $breakpoint == smallTablet-port {
+    @media only screen and (max-width: 48.13em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == bigPhone-land {
     @media only screen and (max-width: 52.13em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-land {
+    @media only screen and (max-width: 42em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-land-height {
+    @media only screen and (max-height: 26em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bigPhone-port {
+    @media only screen and (max-width: 26em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-port {
+    @media only screen and (max-width: 23.5em) {
       @content;
     }
   }

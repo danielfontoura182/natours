@@ -4,6 +4,11 @@
   grid-template-rows: 2;
   row-gap: 6rem;
 
+  @include respond(bigPhone-port) {
+    width: 90%;
+    margin: 8rem auto 0 auto;
+  }
+
   &__item {
     display: flex;
     justify-content: space-around;
@@ -19,6 +24,18 @@
       opacity: 1;
       transform: translate(-50%, -50%);
     }
+
+    @include respond(smallTablet-port) {
+      width: 97%;
+    }
+
+    @include respond(bigPhone-port) {
+      flex-direction: column-reverse;
+      row-gap: 3rem;
+      clip-path: none;
+      background: rgba($color-main-white, 0.4);
+      padding: 5rem;
+    }
   }
 
   &__img {
@@ -29,6 +46,11 @@
     transition: all 0.3s;
     overflow: hidden;
     box-shadow: $box-shadow-light;
+
+    @include respond(bigPhone-port) {
+      width: 12rem;
+      height: 12rem;
+    }
 
     & img {
       width: 100%;
@@ -60,6 +82,10 @@
 
   &__text {
     width: 70%;
+
+    @include respond(bigPhone-port) {
+      width: 100%;
+    }
   }
 
   &__story {

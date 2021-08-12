@@ -1,6 +1,9 @@
 .information__images {
-  position: relative;
   width: 60rem;
+
+  @include respond(bigPhone-port) {
+    display: none;
+  }
 }
 
 .information__img {
@@ -26,6 +29,10 @@
   &--3 {
     top: 70%;
     transition: all 0.2s;
+
+    @include respond(smallTablet-port) {
+      top: 60%;
+    }
   }
 
   &:hover {

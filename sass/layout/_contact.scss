@@ -20,6 +20,10 @@
       url(../img/nat-10.jpg);
   }
 
+  @include respond(smallTablet-port) {
+    width: 97%;
+  }
+
   &__content {
     text-align: left;
     padding: 5rem;
@@ -49,6 +53,10 @@
 
     &--email {
       margin-bottom: 7rem;
+    }
+
+    @include respond(bigPhone-port) {
+      width: 95%;
     }
   }
 
