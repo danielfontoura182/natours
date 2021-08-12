@@ -18,6 +18,7 @@
     max-width: 90rem;
     background: rgba($color-main-white, 0.7);
     padding: 5rem 8rem;
+    -webkit-clip-path: polygon(7% 0, 100% 0%, 93% 100%, 0% 100%);
     clip-path: polygon(7% 0, 100% 0%, 93% 100%, 0% 100%);
 
     &:hover .testimonials__name {
@@ -32,6 +33,7 @@
     @include respond(bigPhone-port) {
       flex-direction: column-reverse;
       row-gap: 3rem;
+      -webkit-clip-path: none;
       clip-path: none;
       background: rgba($color-main-white, 0.4);
       padding: 5rem;

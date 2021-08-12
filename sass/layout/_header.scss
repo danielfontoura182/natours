@@ -8,10 +8,12 @@
   background-size: cover;
   background-position: top;
   min-height: 95vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 
   @include respond(tablet-land) {
+    -webkit-clip-path: none;
     clip-path: none;
     min-height: 80vh;
   }

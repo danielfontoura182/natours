@@ -57,6 +57,7 @@
   padding: 28rem 0;
 
   @include respond(tablet-land) {
+    -webkit-clip-path: none;
     clip-path: none;
     padding: 15rem 0 36rem 0;
   }
@@ -73,7 +74,10 @@
 
 .testimonials-section {
   position: relative;
-  background: $color-offWhite;
+
+  @include respond(bigPhone-port) {
+    background: $color-offWhite;
+  }
 }
 
 .contact-section {

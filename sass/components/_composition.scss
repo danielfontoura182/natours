@@ -1,5 +1,6 @@
 .information__images {
   width: 60rem;
+  position: relative;
 
   @include respond(bigPhone-port) {
     display: none;

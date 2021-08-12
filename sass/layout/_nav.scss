@@ -12,6 +12,7 @@
     display: flex;
     background: rgba(255, 255, 255, 0.295);
     padding: 1.5rem 4rem;
+    -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 
     @include respond(tablet-port) {
